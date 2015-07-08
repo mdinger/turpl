@@ -139,7 +139,7 @@ However any program that does such a thing is *probably* incorrect. Rust
 provides lots of tools to make doing these things rare, but these problems are
 considered impractical to categorically prevent.
 
-Rust models the seperation between Safe and Unsafe with the `unsafe` keyword.
+Rust models the separation between Safe and Unsafe with the `unsafe` keyword.
 There are several places `unsafe` can appear in Rust today, which can largely be
 grouped into two categories:
 
@@ -213,7 +213,7 @@ code to violate memory safety*.
 But wouldn't it be grand if there was some way for Unsafe to trust *some* trait
 contracts *somewhere*? This is the problem that unsafe traits tackle: by marking
 *the trait itself* as unsafe *to implement*, Unsafe can trust the implementation
-to be correct (because Unsafe can trust themself).
+to be correct (because Unsafe can trust itself).
 
 Rust has traditionally avoided making traits unsafe because it makes Unsafe
 pervasive, which is not desirable. Send and Sync are unsafe is because
@@ -282,7 +282,7 @@ Trickier than that is when we get into actual statefulness. Consider a simple
 implementation of `Vec`:
 
 ```rust
-// Note this defintion is insufficient. See the section on lifetimes.
+// Note this definition is insufficient. See the section on lifetimes.
 struct Vec<T> {
     ptr: *mut T,
     len: usize,
