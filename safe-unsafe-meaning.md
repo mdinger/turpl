@@ -32,7 +32,7 @@ However any program that does such a thing is *probably* incorrect. Rust
 provides lots of tools to make doing these things rare, but these problems are
 considered impractical to categorically prevent.
 
-Rust models the seperation between Safe and Unsafe with the `unsafe` keyword.
+Rust models the separation between Safe and Unsafe with the `unsafe` keyword.
 There are several places `unsafe` can appear in Rust today, which can largely be
 grouped into two categories:
 
