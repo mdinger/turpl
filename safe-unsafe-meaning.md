@@ -2,7 +2,7 @@
 
 So what's the relationship between Safe and Unsafe? How do they interact?
 
-Rust models the seperation between Safe and Unsafe with the `unsafe` keyword, which
+Rust models the separation between Safe and Unsafe with the `unsafe` keyword, which
 can be thought as a sort of *foreign function interface* (FFI) between Safe and Unsafe.
 This is the magic behind why we can say Safe is a safe language: all the scary unsafe
 bits are relagated *exclusively* to FFI *just like every other safe language*.
